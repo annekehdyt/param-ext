@@ -1,0 +1,7 @@
+main()
+{
+    void* buff = calloc(1024, 1);
+    FILE* fh = fopen("filename.txt", "rt");
+    fwrite(buff, 1024,1, fh);
+    fclose(fh);
+}
